@@ -1,0 +1,50 @@
+/* Selector de tipo */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(https://legismusic.com/wp-content/uploads/2016/04/music-for-movies-and-trailers.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+h2{
+    color: red;
+    font-size: 40px;
+}
+
+li{
+    color: white;
+    font-size: 20px;
+}
+
+/* Selector de clase */
+
+.peliculas{
+    color: crimson;
+}
+
+.series{
+    font-size: 30px;
+}
+
+.favoritas{
+    font-weight: bold;
+    color: rebeccapurple;
+}
+
+.espaciado{
+    letter-spacing: 10px;
+}
+
+/* Selector de ID */
+
+#spidermanNoMayhome{
+    font-size: 25px;
+    color: tomato;
+    text-decoration: underline;
+}
+
+#temporada3{
+    color: seagreen;
+    font-size: 24px;
+}

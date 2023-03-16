@@ -1,0 +1,144 @@
+body {
+    text-align: center;
+    font-family: 'helvetica neve';
+    background-color: #f2eee3;
+}
+
+.buscar {
+    position: relative;
+    margin: 30px;
+}
+
+.usrname {
+    position: absolute;
+    left: 25%;
+    top: 10px;
+    font-weight: 200;
+    color: #cecece;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+input[type=text]:focus~.usrname {
+    display: block;
+    color: black;
+    top: -20px;
+    font-size: 20px;
+}
+
+input[type=text]:focus~.enter {
+    background-color: #0f1f7a;
+    position: absolute;
+    content: ' ';
+    height: 1px;
+    right: 45%;
+    top: 42px;
+    transform: scaleX(5);
+}
+
+.enter {
+    transition: all ease 0.5s;
+    width: 10.1%;
+    transform: scaleX(1);
+}
+
+input {
+    background-color: #f2eee3;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #cecece;
+    height: 40px;
+    width: 50%;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__cover {
+    height: 20rem;
+    width: 100%;
+}
+
+.card__content {
+    /* Take available height */
+    flex: 1;
+}
+
+
+.layered-card {
+    position: relative;
+
+    /* Demo */
+    height: 6rem;
+    width: 6rem;
+}
+
+.layered-card::before {
+    background: #d1d5db;
+    content: '';
+
+    /* Position */
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: translate(1rem, 1rem);
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    /* Display under the main content */
+    z-index: 0;
+}
+
+.layered-card__content {
+    /* Position */
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    /* Size */
+    height: 100%;
+    width: 100%;
+
+    z-index: 1;
+
+    background: #fff;
+}
+
+img {
+    left: 7px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+
+    /* Border */
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+}
+
+.menu__item {
+    /* Center the content horizontally */
+    align-items: center;
+    display: flex;
+}
+
+.menu__hotkey {
+    /* Push the hot key to the right */
+    margin-left: auto;
+}
+
+.menu__divider {
+    border-bottom: 1px solid #d1d5db;
+    height: 1px;
+}

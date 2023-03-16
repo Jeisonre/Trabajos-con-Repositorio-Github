@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <div class="container_contact">
+        <h1 class="title">Contacto</h1>
+        <div class="form">
+            <form class="form-container" name="enviar-form" netlify>
+                <div class="form-item col-5">
+                    <input type="text" name="name" required id="name" class="input">
+                    <label for="name" class="label">Nombre</label>
+                </div>
+                <div class="form-item col-5">
+                    <input type="text" name="lastname" required id="lastname" class="input">
+                    <label for="lastname" class="label">Apellido</label>
+                </div>
+                <div class="form-item">
+                    <input type="email" name="email" required id="email" class="input">
+                    <label for="email" class="label">Correo</label>
+                </div>
+                <div class="form-item">
+                    <textarea required id="textarea" name="message" class="textarea"></textarea>
+                    <label for="textarea" class="label">Mensaje</label>
+                </div>
+                <div class="form-item">
+                    <input type="submit" value="Enviar" class="btn-enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

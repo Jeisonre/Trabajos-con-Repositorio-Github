@@ -1,0 +1,9 @@
+[placeholder]{
+    display: block;
+    width: 98%;
+    margin-top: 20px;
+}
+
+[type="submit"]{
+    background-color: yellow;
+}

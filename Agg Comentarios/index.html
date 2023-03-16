@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar Comentarios</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="contenedor">
+      <section class="contenedor-agg-com">
+        <div class="imagen-usuario">
+          <img src="usuario.png" alt="not photo" />
+        </div>
+        <div class="input-com">
+          <input
+            id="nuevoComentario"
+            type="text"
+            placeholder="Nuevo Comentario..."
+          />
+          <div class="btn-agg">
+            <button onclick="nComentario()">Comentar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <ul id="comentarios" class="contenedor-2"></ul>
+  </body>
+
+  <!-- <form name="form1" action="#" id="formulario">
+    <input type="text" name="txt" placeholder="USUARIO"> <br>
+    <input type="password" name="text" placeholder="CONTRASEÑA"> <br>
+    <button>ENTRAR</button>
+</form> -->
+
+  <script src="main.js"></script>
+</html>

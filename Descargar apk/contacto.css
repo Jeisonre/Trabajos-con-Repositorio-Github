@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 5%;
+    background: #171717;
+    color: white;
+}
+input,textarea {
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+    background: transparent;
+    color: white;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+}
+textarea {
+    resize: none;
+}
+
+.content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 2em;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(darken(#171717, 5),.5);
+    border-radius: 2px;
+}
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-item{
+    position: relative;
+    width: 100%;
+    padding: 1em;
+}
+@media only screen and (min-width: 600px){
+    .col-5{
+        width: 50%;
+    }
+}
+
+.form,.textarea {
+    height: 10em;
+}
+.input,.textarea {
+    display: block;
+    padding: 1em;
+    width: 100%;
+    transition: all .3s;
+    border-bottom: 2px solid #00B7FF;
+}
+/* Contenedor nombre, apellido, correo */
+.input:focus {
+    border-bottom: 2px solid #828282;
+}
+.input:valid + .label {
+    top: 1em;
+    left: 1em;
+    font-size: .9em;
+}
+.input:focus + .label {
+    top: 1em;
+    left: 1em;
+    font-size: .9em;
+}
+.input:valid{
+    border-bottom: 2px solid rgb(47, 47, 255);
+}
+/* Contenedor mensaje */
+.textarea:focus {
+    border-bottom: 2px solid #828282;
+}
+.textarea:valid + .label {
+    top: 1em;
+    left: 1em;
+    font-size: .9em;
+}
+.textarea:focus + .label {
+    top: 1em;
+    left: 1em;
+    font-size: .9em;
+}
+.textarea:valid{
+    border-bottom: 2px solid rgb(47, 47, 255);
+}
+
+.label {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+.btn-enviar {
+    display: block;
+    width: 100%;
+    padding: 1em 0;
+    box-shadow: 0 0 0 2px #00B7FF;
+    color: #00B7FF;
+    cursor: pointer;
+    transition: all .3s;
+}
+.btn-enviar:hover {
+    background: rgb(0, 153, 249);
+    color: white;
+    box-shadow: 0 0 0 0 transparent;
+}
+.btn-enviar:active {
+    background: darken(rgb(0, 153, 249),7);
+    transform: scale(0.97);
+}
