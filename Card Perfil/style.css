@@ -32,17 +32,20 @@ body::before {
 .profile-card {
     box-shadow: 0 18px 200px -60px black;
     border-radius: 50px;
-    width: 650px;
+    width: 500px;
     position: relative;
     backdrop-filter: blur(15px);
-    border: 2px solid #ffffff40;
+    border: 1px solid #ffffff40;
     padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-
-    @media screen and (max-width: 768px) {
+    gap: 10px;
+}
+@media screen and (max-width: 768px) {
+    .profile-card {
         width: auto;
+        border-radius: 50px;
+        gap: 1px;
     }
 }
 
@@ -74,9 +77,10 @@ body::before {
     display: flex;
     justify-content: center;
     gap: 50px;
-
-    @media screen and (max-width: 576px) {
-        gap: 30px;
+}
+@media screen and (max-width: 576px) {
+    .profile-card_info {
+        font-size: 13px;
     }
 }
 .profile-card_info div{
@@ -115,18 +119,20 @@ body::before {
     position: relative;
     flex-shrink: 0;
     transition: all .2s;
-
-    @media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .profile-card_social a {
         width: 50px;
         height: 50px;
         margin: 10px;
+}
+@media screen and (min-width: 7680px) {
+    .profile-card_social a:hover {
+        transform: scale(1.2) translateY(-5px);
     }
+}
 
-    @media screen and (min-width: 7680px) {
-        :hover {
-            transform: scale(1.2) translateY(-5px);
-        }
-    }
 }
 
 .profile-card_social .facebook {
@@ -160,10 +166,11 @@ body::before {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-
-    @media screen and (max-width: 576px){
-        flex-direction: column;
-        gap: 1.5rem;
+}
+@media screen and (max-width: 576px){
+    .profile-card_actions {
+        flex-direction: row;
+        gap: 1rem;
     }
 }
 
@@ -176,23 +183,20 @@ body::before {
     text-align: center;
     color: white;
     cursor: pointer;
-    transition: all .2s;
-
-    @media screen and (max-width: 768px) {
+    transition: all .2s;        
+}
+@media screen and (max-width: 768px) {
+    .profile-card_actions button {
         min-width: 170px;
+        margin-top: 20px;
+        font-size: 14px;
     }
+}
 
-    @media screen and (max-width: 576px){
-        min-width: inherit;
-        width: 100px;
-        max-width: 350px;
+@media screen and (min-width: 576px){
+    .profile-card_actions button:hover {
+        transform: translateY(-5px);
     }
-
-    @media screen and (min-width: 576px){
-        :hover {
-            transform: translateY(-5px);
-        }
-    }        
 }
 
 .profile-card_actions .blue {
