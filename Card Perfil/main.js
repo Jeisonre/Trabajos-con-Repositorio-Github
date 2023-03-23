@@ -19,7 +19,7 @@ const sendEmail = () => {
     const name = document.querySelector('h1').textContent;
     const email = 'leandroespin2002@gmail.com';
     const subject = `Mensaje de ${name}`;
-    const body = `Hola, ${name}.\n\ndeseo contactarme contigo.`;
+    const body = `Hola, ${name}.\n\n Deseo contactarme contigo.`;
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
 }
 
