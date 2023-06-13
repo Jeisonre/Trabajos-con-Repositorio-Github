@@ -129,8 +129,8 @@ img {
 
 .menu__item {
     /* Center the content horizontally */
-    align-items: center;
     display: flex;
+    align-items: center;
 }
 
 .menu__hotkey {
