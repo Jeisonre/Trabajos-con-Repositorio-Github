@@ -33,7 +33,35 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 550px) {
+
+.outer{
+    overflow: scroll;
+    margin-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .ejemplo{
+    border: 2px solid black;
+    padding: 25px;
+    background-image: url(https://img.freepik.com/foto-gratis/icono-bloqueo-mientras-hombre-usa-mouse_53876-90303.jpg?w=2000);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+  }
+  #text{
+    background: rgba(17, 111, 188, .6);
+    text-align: center;
+    width: 500px;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+@media screen and (max-width: 991px) {
     .abrir-menu,
     .cerrar-menu {
         display: block;
