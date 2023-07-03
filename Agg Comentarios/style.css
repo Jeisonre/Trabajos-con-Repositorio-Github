@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -20,21 +20,21 @@ body{
     background-size: cover;
 }
 
-.contenedor{
-    background-color: rgb(255, 355, 255,0.7);
-    width: 600px;
-    height: 120px;
+.contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    background-color: rgb(255, 355, 255, 0.7);
+    width: 600px;
+    height: 120px;
     border-radius: 20px;
 }
 
-.contenedor-2{
+.contenedor-2 {
     width: 600px;
     height: auto;
-    background-color: rgb(255, 355, 255,0.7);
+    background-color: rgb(255, 355, 255, 0.7);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -45,8 +45,8 @@ body{
     border-radius: 20px;
 }
 
-.comentario{
-    background-color: rgb(255, 355, 255,0.7);
+.comentario {
+    background-color: rgb(255, 355, 255, 0.7);
     width: 100%;
     height: 60px;
     display: flex;
@@ -57,7 +57,7 @@ body{
     color: black;
 }
 
-.contenedor-agg-com{
+.contenedor-agg-com {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,7 +65,7 @@ body{
     gap: 10px;
 }
 
-.imagen-usuario{
+.imagen-usuario {
     width: 50px;
     height: 80px;
     display: flex;
@@ -73,11 +73,11 @@ body{
     align-items: flex-start;
 }
 
-img{
+img {
     width: 50px;
 }
 
-.input-icon{
+.input-icon {
     width: 500px;
     height: 100px;
     background: none;
@@ -87,7 +87,7 @@ img{
     gap: 5px;
 }
 
-#nuevoComentario{
+#nuevoComentario {
     outline: none;
     border: 0;
     width: 100%;
@@ -96,43 +96,79 @@ img{
     font-size: 15px;
     background-color: transparent;
     color: black;
-    border-bottom: 2px solid rgb(255, 355, 255,0);
+    border-bottom: 2px solid rgb(255, 355, 255, 0);
     transition-duration: 200ms;
 }
 
-#nuevoComentario::placeholder{
+#nuevoComentario::placeholder {
     color: black;
 }
 
-#nuevoComentario:focus{
+#nuevoComentario:focus {
     border-bottom: 2px solid red;
 }
 
-.btn-agg{
+.btn-agg {
     height: 60px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     padding: 0px 5px 0px 0px;
 }
 
-button{
-    padding: 12px 20px 12px 20px;
-    border-radius: 20px;
+button {
+    background-color: #4caf50;/* Color de fondo del botón */
     border: none;
-    outline: none;
-    font-size: 15px;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;/* Duración de la transición */
     cursor: pointer;
 }
+button:hover {
+    background-color: #008cba;/* Nuevo color de fondo al pasar el mouse */
+}
 
-.close{
+button:active {
+    background-color: #3e8e41;/* Nuevo color de fondo al hacer clic */
+    transform: translateY(4px);/* Animación de desplazamiento hacia abajo */
+}
+
+.close {
     font-size: 12px;
-    position: absolute;
-    right: 150px;
-    width: 100px;
+    position: relative;
+    right: -500px;
     z-index: 20;
     transition-duration: 200ms;
     display: block;
     cursor: pointer;
     color: red;
+}
+
+.animate-button {
+    background-color: #4caf50;/* Color de fondo del botón */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;/* Duración de la transición */
+    cursor: pointer;
+}
+
+.animate-button:hover {
+    background-color: #008cba;/* Nuevo color de fondo al pasar el mouse */
+}
+
+.animate-button:active {
+    background-color: #3e8e41;/* Nuevo color de fondo al hacer clic */
+    transform: translateY(4px);/* Animación de desplazamiento hacia abajo */
 }
