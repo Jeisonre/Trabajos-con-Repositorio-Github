@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pañaleras Pototin Magdalena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pañaleras Pototin Magdalena</h1>
+        <div class="cart">
+            <a href="javascript:void(0);" onclick="openCart()" class="cart-link">
+                <img src="carrito.png" alt="Abrir Carrito">
+                <span class="item-count">0</span>
+            </a>
+            <div class="cart-container">
+                <div class="cart-header">
+                    <h3>Carrito de Compras</h3>
+                    <span class="close-cart" onclick="closeCart()">&times;</span>
+                </div>
+                <div class="cart-items">
+                    <!-- Los productos se agregarán aquí -->
+                </div>
+                <div class="cart-total">
+                    <p>Total: $<span id="cart-total">0.00</span></p>
+                </div>
+                <button class="checkout-button">Finalizar Compra</button>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="description">
+            <img src="S/N.jpeg" alt="No Photo">
+        </div>
+        <h2>Acerca de Nosotros</h2>
+        <p>Breve descripción de la tienda y su información.</p>
+    </section>
+    <section id="products">
+        <h2>Productos</h2>
+        <div class="product-category">
+            <h3>Pañales</h3>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.90</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <!-- Repite esto para otros productos -->
+            </div>
+        </div>
+        <div class="product-category">
+            <h3>Paños Humedos</h3>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.90</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <!-- Repite esto para otros productos -->
+            </div>
+        </div>
+        <div class="product-category">
+            <h3>Biberones</h3>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.90</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bebe.jpg" alt="Producto 1">
+                    <p>Nombre del Producto 1</p>
+                    <p>Precio: $23.98</p>
+                    <button class="buy-button" data-name="Producto 1" data-price="23.90">Comprar</button>
+                </div>
+                <!-- Repite esto para otros productos -->
+            </div>
+        </div>
+        <!-- Repite la estructura anterior para los otros tipos de productos -->
+    </section>
+    <section id="promotions">
+        <br>
+        <h2>Promociones</h2>
+        <div class="promotion-grid">
+            <div class="promotion">
+                <img src="bebe.jpg" alt="Promoción 1">
+                <p>Nombre de la Promoción 1</p>
+                <p>Precio: $23.98</p>
+                <button class="buy-button" data-name="Promoción 1" data-price="23.90">Comprar</button>
+            </div>
+            <div class="promotion">
+                <img src="bebe.jpg" alt="Promoción 1">
+                <p>Nombre de la Promoción 1</p>
+                <p>Precio: $23.98</p>
+                <button class="buy-button" data-name="Promoción 1" data-price="23.90">Comprar</button>
+            </div>
+            <div class="promotion">
+                <img src="bebe.jpg" alt="Promoción 1">
+                <p>Nombre de la Promoción 1</p>
+                <p>Precio: $23.98</p>
+                <button class="buy-button" data-name="Promoción 1" data-price="23.90">Comprar</button>
+            </div>
+            <div class="promotion">
+                <img src="bebe.jpg" alt="Promoción 1">
+                <p>Nombre de la Promoción 1</p>
+                <p>Precio: $23.98</p>
+                <button class="buy-button" data-name="Promoción 1" data-price="23.90">Comprar</button>
+            </div>
+            <!-- Repite esto para otras promociones -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Correo Electrónico: info@panaleraspototinmagdalena.com</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </section>    
+    <script src="main.js"></script>
+</body>
+</html>
