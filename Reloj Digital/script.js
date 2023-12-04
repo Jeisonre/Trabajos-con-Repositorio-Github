@@ -19,6 +19,10 @@ function currentTime() {
     document.querySelector('#hours').style.transform = "rotate(" + hhRotation +  "deg)";
     document.querySelector('#minutes').style.transform = "rotate(" + mmRotation +  "deg)";
     document.querySelector('#seconds').style.transform = "rotate(" + ssRotation +  "deg)";
+
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let dateString = date.toLocaleDateString('es-US', options);
+    document.querySelector('#watch').insertAdjacentHTML('beforeend', `<div id="date">${dateString}</div>`);
 }
 
 setInterval(currentTime, 1000);

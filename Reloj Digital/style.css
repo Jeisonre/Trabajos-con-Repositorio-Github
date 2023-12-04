@@ -45,3 +45,11 @@ body {
     top: 10%;
     border: 1px solid white;
 }
+
+#watch div#date {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+}
