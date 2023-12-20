@@ -1,12 +1,17 @@
-<html>
-    <head>
-        <title>Estructura</title>
-    </head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
     <body>
         <header id="cabecera" style="height:50px; background-color:rgb(113, 161, 192)">
             Esta es la cabecera
-           <a href="https://www.nissan.com.ec/"><img src="1.jpg"alt="uno" style="height: 50px; width: 50px;"></a>
+            <a href="https://www.nissan.com.ec/"><img src="1.jpg"alt="uno" style="height: 50px; width: 50px;"></a>
         </header>
         <div id="nav" style="height: 30px; background-color: rgb(131, 233, 136)">
             Barra de navegación
@@ -26,11 +31,72 @@
                 <map name="workmap">
                     <area shape="rect" coords="129,183" href="" alt="">
                 </map>
+
+                <!--Tablas-->
+                <table border="1">
+                    <tr>
+                        <th style="border: 3px solid yellow;">Sabado</th>
+                        <th style="border: 3px solid yellow;">Domingo</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 3px solid blue;">Curso HTML</td>
+                        <td style="border: 3px solid blue;">Curso Dreamviewer</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 3px solid red;">Curso FrontPage</td>
+                        <td style="border: 3px solid red;">Curso Flash</td>
+                    </tr>
+                </table>
+                <br>
+                <table border="2">
+                    <tr>
+                        <td colspan="3" >Tecnologias dela informacion</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td>Javascript</td>
+                    </tr>
+                </table>
+                <br>
+                <table border="2">
+                    <tr>
+                        <td rowspan="3" >Tecnologias dela informacion</td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>
+                    </tr>
+                </table>
+
             </section>
             <div id="right" style="width: 25%; background-color: rgb(36, 39, 206)">
                 Derecha
-                <article id="r1" style="height: 50%; background-color: rgb(13, 75, 16)">
+                <article id="r1" style="height: 55%; background-color: rgb(13, 75, 16)">
                     R1
+                    <h3>Sistema de navegacion integrado</h3>
+                    <ol type="A">
+                        <li>Hola Mundo</li>
+                        <li>Programadores</li>
+                        <li>Arquitectura</li>
+                    </ol>
+                    <h3>Sistema de navegacion complementarios</h3>
+                    <ul style="list-style-type: circle;">
+                        <li>Hola Mundo</li>
+                        <li>Programadores</li>
+                        <li>Arquitectura</li>
+                    </ul>
+                    <h3>Sistema de navegacion Lista-Definiciones</h3>
+                    <dl>
+                        <dt>Diseño minimalista</dt>
+                        <dd>Menos contenido significa a mejor aspecto</dd>
+
+                        <dt>Relacion del sistema con el mundo real</dt>
+                        <dd>Caundo se inserten elementos como imagenes o animaciones, estas deben tener relacion con lementos que estan presentes en la vida cotidiana</dd>
+                    </dl>
                 </article>
                 <div id="r2" style="height: 45%; background-color: rgb(1, 49, 3)">
                     R2
