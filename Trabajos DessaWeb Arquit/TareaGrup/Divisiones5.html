@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Ejemplo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        #header {
+            background-color: #89b982;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #menu {
+            background-color: #e6df81;
+            width: 15%;
+            padding: 10px;
+        }
+
+        #content {
+            display: flex;
+            flex: 1;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        #nav-article {
+            background-color: #b9b35f;
+            padding: 10px;
+        }
+
+        #nav-article button {
+            margin-bottom: 10px;
+        }
+
+        #article {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: #8a8546;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <h1>Header Horizontal</h1>
+    </div>
+
+    <div id="content">
+        <div id="menu">
+            <h2>Menú Vertical</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+
+        <article>
+            <div id="nav-article">
+                <h2>Navegación</h2>
+                <button>Botón 1</button>
+                <button>Botón 2</button>
+                <button>Botón 3</button>
+            </div>
+
+            <div id="article">
+                <h2>Contenido de la Sección</h2>
+                <p>Este es el contenido de la sección.</p>
+            </div>
+        </article>
+    </div>
+    
+    <div id="footer">
+        <p>Pie de Página</p>
+    </div>
+
+</body>
+</html>
+
