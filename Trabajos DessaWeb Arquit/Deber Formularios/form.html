@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Donación</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Particular</h2>
+        <form action="">
+            <label class="pregunta" for="">Elije un destino para tu Donación</label><br>
+            <select class="option1" name="nombre" id="">
+                <option value="opcion1">Por el acceso a la salud de todas las personas</option>
+                <option value="opcion2">Por una mejor vida de otras personas</option>
+                <option value="opcion3">Por ayuda humanitaria</option>
+            </select>
+            <br><br>
+            <label class="pregunta" for="">¿Cuano quieres aportar?</label> <small> Los campos marcados con * son obligatorios</small> <br><br>
+            <label class="radio"><input type="radio" name="opcion" value="20€">20€</label>
+            <label class="radio"><input type="radio" name="opcion" value="50€">50€</label>
+            <label class="radio"><input type="radio" name="opcion" value="100€">100€</label>
+            <label class="radio"><input type="radio" name="opcion" value="otro importe">Otro Importe <input type="number" class="otroImp" min="1">€</label>
+            <br>
+            <small>Indica la cantidad aportar - Recuerda que puedes desgravarte hasta un 25% en la declaración del IRPF</small>
+            <br>
+            <hr>
+            <div class="container-datos">
+                <div class="container-datos1">
+                    <div class="fila1">
+                        <p>Nombre</p>
+                        <input type="text" name="nombre" id="" required>
+                    </div>
+                    <div class="fila1">
+                        <p>Primer Apellido</p>
+                        <input type="text" name="pApellido" id="" required>
+                    </div>
+                    <div class="fila1">
+                        <p>Segundo Apellido</p>
+                        <input type="text" name="sApellido" id="">
+                    </div>
+                </div>
+                <div class="container-datos1">
+                    <div class="fila1">
+                        <p>NIE/NIF</p>
+                        <input type="text" name="nie" id="">
+                    </div>
+                    <div class="fila1">
+                        <p>Fecha de Nacimiento</p>
+                        <div class="date-input">
+                            <input type="number" class="day" placeholder="Día">
+                            <span>/</span> 
+                            <input type="number" class="month" placeholder="Mes">
+                            <span>/</span>
+                            <input type="number" class="year" placeholder="Año">
+                        </div>
+                    </div>
+                    <div class="fila1">
+                        <p>Actividad profesional</p>
+                        <input type="text" name="aProfesional" id="">
+                    </div>
+                </div>
+                <small>* El NIF es imprensidivle para desgravarte en la declaración del IRPF</small><br><br>
+                <div class="container-datos1">
+                    <div class="fila1">
+                        <p>E-mail</p>
+                        <input type="email" name="email" id="" required>
+                    </div>
+                    <div class="fila1">
+                        <p>Teléfono movil</p>
+                        <input type="tel" name="tel" id="">
+                    </div>
+                    <div class="fila1">
+                        <p>Teléfono fijo</p>
+                        <input type="tel" name="tel" id="">
+                    </div>
+                </div>
+                <div class="container-datos1">
+                    <div class="fila1">
+                        <p>Dirreción completa</p>
+                        <input type="text" name="dir" id="" required>
+                    </div>
+                </div>
+                <div class="container-datos1">
+                    <div class="fila1">
+                        <p>C.P</p>
+                        <input type="text" name="cp" id="cp" required>
+                    </div>
+                    <div class="fila1">
+                        <p>Localidad</p>
+                        <input type="text" name="localidad" id="" required>
+                    </div>
+                    <div class="fila1">
+                        <p>Provincia</p>
+                        <select name="provincia" id="">
+                            <option value="Quito">Quito</option>
+                            <option value="Riobamba">Riobamba</option>
+                            <option value="Guayquil">Guayquil</option>
+                        </select>
+                    </div>
+                    <div class="fila1">
+                        <p>Pais</p>
+                        <select name="pais" id="" required>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Peru">Peru</option>
+                        </select>
+                    </div>
+                </div>
+                <small>*El Codigo Postal requerido si vives en Ecuador</small>
+            <br>
+            <hr>
+            <br>
+            <label class="pregunta" for="">¿Quieres recibir información de Médcos del Mundo?</label><br>
+            <input type="radio" name="opcion1" id="">Si, sólo por correo electronico <br>
+            <input type="radio" name="opcion2" id="">Si, por correo electronico y postal <br>
+            <input type="radio" name="opcion3" id="">No, gracias. <br>
+            <br>
+            <div class="botones">
+                <input type="reset" name="reset" id="" value="Borrar datos">
+                <input type="submit" name="enviar" id="" value="Enviar">
+            </div>
+            <hr>
+            <a href="#"><input type="checkbox" name="" id="">Conoce nuestra Politica de Confidencialidad</a>
+        </form>
+    </div>
+</body>
+</html>
